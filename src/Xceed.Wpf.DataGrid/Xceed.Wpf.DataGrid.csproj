@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net40</TargetFrameworks>
-    <Description>This assembly implements the Xceed.Wpf.DataGrid namespace, a data grid control for the Windows Presentation Framework. This DataGrid was removed from the Extended.Wpf.Toolkit from version 3.5.0 onwards and therefore now is provided as an independent package that has been forked from the 3.4.0 release.</Description>
+    <Description>This package provides the Xceed.Wpf.DataGrid namespace, a data grid control for the Windows Presentation Framework. This DataGrid was removed from the Extended.Wpf.Toolkit from version 3.5.0 onwards and therefore now is provided as an independent package that has been forked from the 3.4.0 release.</Description>
     <Product>Extended Toolkit for WPF - DataGrid</Product>
     <Copyright>Copyright (C) Xceed Software Inc. 2007-2017</Copyright>
   </PropertyGroup>
@@ -17,10 +17,13 @@
     <PackageId>Extended.Wpf.Toolkit.DataGrid</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/xceedsoftware/wpftoolkit/blob/master/license.md</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/ggeurts/wpftoolkit</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ggeurts/wpftoolkit.datagrid</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
+    <Authors>Gerke Geurts</Authors>
+    <Company>GE2 Consultancy</Company>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(FeatureEntityFramework)'=='True'">

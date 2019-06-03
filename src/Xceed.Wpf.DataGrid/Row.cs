@@ -3003,7 +3003,6 @@ namespace Xceed.Wpf.DataGrid
     private DataGridControl m_parentGridUsedForCellsGeneration; // = null
     private Panel m_cellsHostPanel; // = null
     private Dictionary<string, Cell> m_templateCells = new Dictionary<string, Cell>();
-    private List<RegionPresenterConfig> m_oldRegionPresenterConfigs; // = null
     private BitVector32 m_flags = new BitVector32();
     private bool m_isRecyclingCandidate;
 

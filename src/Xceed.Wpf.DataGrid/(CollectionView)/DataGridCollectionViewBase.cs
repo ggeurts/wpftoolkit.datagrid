@@ -2682,7 +2682,6 @@ namespace Xceed.Wpf.DataGrid
     private int m_currentAddItemPosition = -1;
 
     private DistinctValuesConstraint m_distinctValuesConstraint = DistinctValuesConstraint.All;
-    private DistinctValuesUpdateMode m_distinctValueUpdateMode = DistinctValuesUpdateMode.Manual;
 
     private List<DataGridItemPropertyBase> m_filteredItemProperties;
     private ReadOnlyCollection<DataGridItemPropertyBase> m_readOnlyFilteredItemProperties;
@@ -2702,7 +2701,6 @@ namespace Xceed.Wpf.DataGrid
 
     // Containing a DataGridItemProperty key, ObservableCollection<object> values map
     private DistinctValuesDictionary m_distinctValues;
-    private DataGridItemPropertyBase m_excludedItemPropertyFromDistinctValueCalculation;
 
     [Flags]
     private enum DataGridCollectionViewBaseFlags
