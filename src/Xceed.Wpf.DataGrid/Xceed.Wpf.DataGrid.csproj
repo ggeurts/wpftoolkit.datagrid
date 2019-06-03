@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net40</TargetFrameworks>
+    <Description>This assembly implements the Xceed.Wpf.DataGrid namespace, a data grid control for the Windows Presentation Framework. This DataGrid was removed from the Extended.Wpf.Toolkit from version 3.5.0 onwards and therefore now is provided as an independent package that has been forked from the 3.4.0 release.</Description>
+    <Product>Extended Toolkit for WPF - DataGrid</Product>
+    <Copyright>Copyright (C) Xceed Software Inc. 2007-2017</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Feature definitions -->
+    <FeatureEntityFramework>False</FeatureEntityFramework>
+    <Version>3.5.0</Version>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>sn.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <PackageId>Extended.Wpf.Toolkit.DataGrid</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/xceedsoftware/wpftoolkit/blob/master/license.md</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/ggeurts/wpftoolkit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(FeatureEntityFramework)'=='True'">
+    <DefineConstants>FEATURE_ENTITY_FRAMEWORK;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="3.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="PresentationFramework.Luna" />
+    <Reference Include="PresentationFramework.Royale" />
+
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.IdentityModel" />
+  </ItemGroup>
+</Project>
