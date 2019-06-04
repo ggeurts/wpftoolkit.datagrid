@@ -60,6 +60,7 @@ steps:
       -p:VersionPrefix="$(versionPrefix)"
       -p:VersionLabel="$(versionLabel)"
       -p:VersionRevision="$(versionRevision)"
+      -p:Version="$(semanticVersion)"
 
 - task: VSTest@2
   inputs:
@@ -86,7 +87,7 @@ steps:
     and
     ( succeeded()
     , or
-      ( in(variables['Build.SourceBranch'], 'refs/heads/master')
+      ( in(variables['Build.SourceBranch'], 'refs/heads/master', 'refs/heads/develop')
       , startswith(variables['Build.SourceBranch'], 'refs/heads/release-')
       , startswith(variables['Build.SourceBranch'], 'refs/heads/hotfix-')
       )
